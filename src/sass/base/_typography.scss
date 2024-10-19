@@ -3,10 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-h1,
-h2,
+h1 {
+    font-family: var(--ff-heading);
+    font-weight: 300; // Lighten the weight
+}
+
+h2 {
+    font-family: var(--ff-heading);
+    font-weight: 400; // Lighten the weight
+}
+
 h3 {
-    font-family: var(--ff-heading); // headings
+    font-family: var(--ff-heading);
+    font-weight: 700; // Keep this as is or adjust as needed
 }
 
 p {
