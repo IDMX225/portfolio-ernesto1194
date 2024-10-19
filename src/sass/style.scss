@@ -2,17 +2,26 @@
 @use "./base/reset";
 @use "./base/typography";
 
+/* //////////////////////
+  Color Palette
+  /////////////////////// */
 
+:root {
+  --clr-primary: #789DBC; // Primary color
+  --clr-secondary: #FFE3E3; // Secondary color
+  --clr-background: #FEF9F2; // Background color
+  --clr-accent: #C9E9D2; // Accent color
+}
 
 /* //////////////////////
   General styling
   /////////////////////// */
 
 body {
-  font-family: var(--ff-body);
-  font-size: var(--fs-400);
+  background-color: var(--clr-background);
   color: var(--clr-neutral-900);
 }
+
 
 h1,
 h2,
@@ -20,6 +29,7 @@ h3 {
   font-family: var(--ff-heading);
   font-weight: var(--fw-900);
   line-height: 1.1;
+
 }
 
 strong {
@@ -39,7 +49,7 @@ section,
    and add margin to the top for proper
    spacing */
 
-.flow > *:where(:not(:first-child)) {
+.flow>*:where(:not(:first-child)) {
   margin-top: var(--flow-spacer, 1em);
 }
 
@@ -67,8 +77,9 @@ section,
 
 .article-title,
 .section-title {
-  color: var(--clr-primary-500);
+  color: var(--clr-primary);
 }
+
 
 .article-title {
   font-size: var(--fs-700);
@@ -123,7 +134,7 @@ body {
   flex-direction: column;
 }
 
-body > main {
+body>main {
   flex: 1 0 auto;
 }
 
@@ -133,18 +144,18 @@ header,
 }
 
 .site-footer {
-  --logo-color: currentColor;
   padding: 2em 0;
   color: var(--clr-neutral-100);
-  background-color: var(--clr-primary-500);
+  background-color: var(--clr-primary);
   text-align: center;
 }
+
 
 /* //////////////////////
   Homepage
   /////////////////////// */
 
-.hero > div {
+.hero>div {
   display: grid;
   grid-auto-flow: row;
   grid-auto-columns: 1fr;
@@ -159,14 +170,15 @@ header,
 }
 
 @media (min-width: 45em) {
-  .hero > div {
+  .hero>div {
     grid-auto-flow: column;
   }
 }
 
 .featured-articles {
-  background-color: var(--clr-primary-100);
+  background-color: var(--clr-secondary);
 }
+
 
 .articles__list {
   --flow-spacer: 3rem;
@@ -263,6 +275,7 @@ header,
   border-radius: 0.25em;
   align-self: start;
   justify-self: start;
+
 }
 
 .btn:focus {
@@ -271,22 +284,19 @@ header,
 }
 
 .btn--primary {
-  background: var(--clr-primary-400);
+  background: var(--clr-primary);
   color: var(--clr-neutral-100);
-  font-weight: var(--fw-700);
-  border: 2px solid var(--clr-primary-400);
+  border: 2px solid var(--clr-primary);
 }
 
 .btn--primary:hover,
 .btn--primary:focus {
   background: var(--clr-primary-500);
-  border-color: var(--clr-primary-500);
 }
 
 .btn--neutral {
   background-color: var(--clr-neutral-100);
   color: var(--clr-neutral-900);
-  font-weight: var(--fw-700);
   border: 2px solid var(--clr-neutral-900);
 }
 
