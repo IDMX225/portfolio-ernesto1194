@@ -7,10 +7,10 @@
   /////////////////////// */
 
 :root {
-  --clr-primary: #789DBC; // Primary color
-  --clr-secondary: #FFE3E3; // Secondary color
-  --clr-background: #FEF9F2; // Background color
-  --clr-accent: #C9E9D2; // Accent color
+  --clr-primary: #5e7b90; // Primary color
+  --clr-secondary: #96b0a3; // Secondary color
+  --clr-background: #e0dcd6; // Background color
+  --clr-accent: #1d6130; // Accent color
 }
 
 /* //////////////////////
@@ -33,7 +33,7 @@ h3 {
 }
 
 strong {
-  font-weight: var(--fw-700);
+  font-weight: var(--fw-600);
 }
 
 section,
@@ -86,7 +86,7 @@ section,
 }
 
 .section-title {
-  font-size: var(--fs-600);
+  font-size: var(--fs-700);
 }
 
 article img {
@@ -237,11 +237,13 @@ header,
 
 .snippet__meta {
   grid-area: meta;
-  color: var(--clr-neutral-400);
+  color: var(--clr-neutral-700);
+
 }
 
 .snippet__meta span {
-  color: var(--clr-neutral-900);
+  color: var(--clr-neutral-700);
+
 }
 
 .snippet .btn {
@@ -295,7 +297,8 @@ header,
 
 .btn--primary {
   background: var(--clr-primary);
-  color: var(--clr-neutral-100);
+  color: var(--clr-neutral-500);
+  color: black;
   border: 2px solid var(--clr-primary);
 }
 
