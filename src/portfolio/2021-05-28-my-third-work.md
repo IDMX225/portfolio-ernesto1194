@@ -8,9 +8,9 @@ imageAlt: This is a test
 description: The Pond Poem
 ---
 
-This was my first ever CSS page stle I ever created for IDMX 225
+This was my first ever CSS page style I ever created for IDMX 225.
 
-https://pondoasis.netlify.app
+[View the pond poem here](https://pondoasis.netlify.app)
 
 
 

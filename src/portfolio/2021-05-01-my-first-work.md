@@ -10,4 +10,4 @@ description: Here is a showcase of the very first CSS site I have made
 
 This is a poem I have took and spruced it up into my own CSS page. I love how this turned out!
 
-https://improvedpoemchanges.netlify.app
+[View the poem here](https://improvedpoemchanges.netlify.app)
