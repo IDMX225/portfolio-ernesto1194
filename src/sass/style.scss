@@ -1,6 +1,7 @@
 @use "./abstracts/variables";
 @use "./base/reset";
 @use "./base/typography";
+@use "./base/forms";
 
 /* //////////////////////
   Color Palette
@@ -49,7 +50,7 @@ section,
    and add margin to the top for proper
    spacing */
 
-.flow>*:where(:not(:first-child)) {
+.flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-spacer, 1em);
 }
 
@@ -142,7 +143,7 @@ body {
   flex-direction: column;
 }
 
-body>main {
+body > main {
   flex: 1 0 auto;
 }
 
@@ -163,7 +164,7 @@ header,
   Homepage
   /////////////////////// */
 
-.hero>div {
+.hero > div {
   display: grid;
   grid-auto-flow: row;
   grid-auto-columns: 1fr;
@@ -178,7 +179,7 @@ header,
 }
 
 @media (min-width: 45em) {
-  .hero>div {
+  .hero > div {
     grid-auto-flow: column;
   }
 }
