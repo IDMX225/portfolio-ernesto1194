@@ -2,89 +2,196 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal author's portfolio site.">
-  <meta name="generator" content="Eleventy v2.0.1">
-  <title>Portfolio Page</title>
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="shortcut icon" href="/assets/vector.svg" type="image/svg+xml">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal author's portfolio site." />
+  <meta name="generator" content="Eleventy v2.0.1" />
+  <title>Find Your Forever Friend</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="shortcut icon" href="/assets/vector.svg" type="image/svg+xml" />
 </head>
 
 <body>
   <header class="page-header">
-  <div class="container">
-    <div class="page-header__content">
-      <div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 26.6" class="logo" width="8rem"
-          fill="var(--logo-color, #000)">
-          <path
-            d="M32.4 8.1h2.9v11.7h-2.9V8.1zm4 7.3c0-2.9 1.8-4.6 4.5-4.6s4.5 1.7 4.5 4.6-1.7 4.7-4.5 4.7-4.5-1.7-4.5-4.7zm6.2 0c0-1.6-.6-2.5-1.6-2.5s-1.6.9-1.6 2.5.6 2.5 1.6 2.5 1.6-.8 1.6-2.5zm4 5h2.8c.3.6.9 1 1.6.9 1.1 0 1.7-.6 1.7-1.5v-1.6c-.5 1-1.6 1.7-2.7 1.6-2.1 0-3.5-1.6-3.5-4.4s1.3-4.5 3.6-4.5c1.2-.1 2.3.6 2.7 1.7h-.1V11h2.9v8.8c0 2.1-1.9 3.4-4.6 3.4-2.6 0-4.2-1.1-4.4-2.8zm6-5c0-1.4-.6-2.3-1.7-2.3s-1.7.9-1.7 2.3.6 2.2 1.7 2.2 1.7-.7 1.7-2.2zm4 0c0-2.9 1.8-4.6 4.5-4.6s4.5 1.7 4.5 4.6-1.7 4.7-4.5 4.7-4.4-1.7-4.5-4.7zm6.2 0c0-1.6-.6-2.5-1.6-2.5s-1.6.9-1.6 2.5.6 2.5 1.6 2.5 1.6-.8 1.6-2.5zm4-6.5c0-.8.6-1.5 1.4-1.5.8 0 1.5.6 1.5 1.4 0 .8-.6 1.5-1.4 1.5h-.1c-.7 0-1.4-.6-1.4-1.4zm0 2.1h2.9v8.9h-2.9V11zm13.5 4.4c0 2.9-1.3 4.6-3.5 4.6-1.2.1-2.2-.6-2.7-1.6H74v4.4h-2.9V11H74v1.6c.4-1.1 1.5-1.8 2.7-1.7 2.3 0 3.6 1.6 3.6 4.5zm-3 0c0-1.4-.7-2.3-1.7-2.3s-1.7.9-1.7 2.3.6 2.3 1.7 2.3 1.8-.8 1.7-2.3zm7.9-4.6c2.4 0 3.9 1.1 3.9 3h-2.6c0-.6-.5-1-1.3-1s-1.2.2-1.2.7c0 .5.3.6 1 .7l1.9.4c1.8.4 2.5 1.1 2.5 2.4 0 1.8-1.7 3-4.1 3s-4.1-1.2-4.2-3h2.8c.1.7.6 1 1.4 1s1.2-.3 1.2-.7c0-.5-.3-.6-1-.7l-1.7-.4c-1.7-.4-2.6-1.3-2.6-2.6.1-1.7 1.6-2.8 4-2.8zM99 19.9h-2.8v-1.7h-.1c-.3 1.1-1.4 1.9-2.6 1.8-1.7.1-3.1-1.3-3.2-3v-6h2.9v5.1c0 1 .5 1.6 1.4 1.6.8 0 1.5-.7 1.5-1.5V11H99v8.9zm1.4-8.9h2.8v1.7h.1c.3-1.1 1.4-1.9 2.5-1.9 1.2-.1 2.3.7 2.5 1.9h.1c.4-1.2 1.5-1.9 2.7-1.9 1.5-.1 2.9 1.1 2.9 2.7v6.3h-2.9v-5.3c0-.9-.4-1.4-1.2-1.4-.7 0-1.3.5-1.3 1.2v5.5h-2.8v-5.3c0-.9-.4-1.4-1.2-1.4-.7 0-1.3.6-1.3 1.3v5.4h-2.9V11zM26.7 8.9c0-4.9-4-8.9-8.9-8.9-2.5 0-4.9 1-6.6 2.9H0v23.7h23.7V15.5c1.9-1.7 3-4.1 3-6.6zm-4.6 0c0 2.4-1.9 4.3-4.3 4.3s-4.3-1.9-4.3-4.3 1.9-4.3 4.3-4.3 4.3 1.9 4.3 4.3zM19.2 22H4.6V7.4H9c-.1.5-.1 1-.1 1.4 0 4.9 4 8.9 8.9 8.9.5 0 .9 0 1.4-.1V22z" />
-        </svg>
+    <div class="container">
+      <div class="page-header__content">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="8rem" fill="var(--logo-color, #000)">
+            <g>
+              <circle cx="12" cy="16" r="4" fill="currentColor" />
+              <circle cx="8" cy="10" r="2" fill="currentColor" />
+              <circle cx="16" cy="10" r="2" fill="currentColor" />
+              <circle cx="6" cy="6" r="1.5" fill="currentColor" />
+              <circle cx="12" cy="4" r="1.5" fill="currentColor" />
+              <circle cx="18" cy="6" r="1.5" fill="currentColor" />
+            </g>
+          </svg>
+        </div>
+        <nav>
+          <ul role="list" class="nav-list flex-group">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/portfolio/">Adopt</a>
+            </li>
+            <li>
+              <a href="/contact/">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-
-        <ul role="list" class="nav-list flex-group">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/portfolio/">Work</a>
-          </li>
-           <li>
-            <a href="/contact/">Contact</a>
-          </li>
-        </ul>
-      </nav>
     </div>
-  </div>
-</header>
+  </header>
   <main>
-    
-<div class="section container">
-  <h1 class="section-title">Recent work</h1>
-  <ul role="list" class="articles__list flow"><li>
-  <article class="snippet">
-    <img src="/assets/portfolio/buzzbites.jpg" alt="This is a test My Second Article" class="snippet__image">
-    <h3 class="snippet__title"> <a href="/portfolio/2021-05-15-my-second-work/">UI Project</a></h3>
-    <p class="snippet__meta">by <span>Ernesto Cuellar</span> on <span>October 10, 2024 </span>
-    </p>
-    <p class="snippet__body">Here is a showcase of my most recent work where I created a UI showcasing with a &quot;buy now&quot; button</p>
-    <a href="/portfolio/2021-05-15-my-second-work/" class="btn btn--primary">Continue Reading</a>
-  </article>
-</li><li>
-  <article class="snippet">
-    <img src="/assets/portfolio/thepond.jpg" alt="This is a test" class="snippet__image">
-    <h3 class="snippet__title"> <a href="/portfolio/2021-05-28-my-third-work/">The Pond Poem</a></h3>
-    <p class="snippet__meta">by <span>Ernesto Cuellar</span> on <span>September 28, 2024 </span>
-    </p>
-    <p class="snippet__body">The Pond Poem</p>
-    <a href="/portfolio/2021-05-28-my-third-work/" class="btn btn--primary">Continue Reading</a>
-  </article>
-</li><li>
-  <article class="snippet">
-    <img src="/assets/portfolio/totheriver.jpg" alt="My First Article" class="snippet__image">
-    <h3 class="snippet__title"> <a href="/portfolio/2021-05-01-my-first-work/">To The River Poem</a></h3>
-    <p class="snippet__meta">by <span>Ernesto Cuellar</span> on <span>September 15, 2024 </span>
-    </p>
-    <p class="snippet__body">Here is a showcase of the very first CSS site I have made</p>
-    <a href="/portfolio/2021-05-01-my-first-work/" class="btn btn--primary">Continue Reading</a>
-  </article>
-</li></ul>
-</div>
+    <div class="section container">
+      <h1 class="section-title">Find Your Forever Friend!</h1>
+      <ul role="list" class="articles__list flow">
+        <li>
+          <article class="snippet">
+            <img src="/assets/portfolio/buzzbites.jpg" alt="This is a test My Second Article" class="snippet__image" />
+            <h3 class="snippet__title">
+              <a href="">Theo</a>
+            </h3>
 
+            <p class="snippet__body">
+              Meet Theo, a gentle 5-year-old British Shorthair with a plush, soft coat and bright amber eyes that will
+              melt your heart. Theo is the perfect mix of calm and affectionate—he enjoys lounging in cozy spots but
+              also loves a good cuddle session when the mood strikes. He’s a quiet, observant cat who thrives in a
+              peaceful environment and enjoys being around his humans, though he’s never demanding. Theo would be a
+              wonderful companion for someone who appreciates a relaxed, loving pet that just wants to share his quiet
+              moments with you. If you’re looking for a dignified, sweet-natured cat, Theo is waiting to meet you!
+            </p>
+            <a href="" class="btn btn--primary">Meet Theo</a>
+          </article>
+        </li>
+      </ul>
+      <ul role="list" class="articles__list flow">
+        <li>
+          <article class="snippet">
+            <img src="/assets/portfolio/buzzbites.jpg" alt="This is a test My Second Article" class="snippet__image" />
+            <h3 class="snippet__title">
+              <a href="">Oliver</a>
+            </h3>
+            <p class="snippet__body">
+              Meet Oliver, a delightful 4-year-old British Shorthair with a sleek, silvery-blue coat and beautiful amber
+              eyes that will win you over at first glance. Oliver is a laid-back, affectionate cat who enjoys quiet time
+              with his people. He’s not one for a lot of fuss, but he absolutely loves a good chin scratch or a gentle
+              pet while he relaxes beside you. Oliver is calm, confident, and easy to be around, making him a great fit
+              for a household that appreciates a mellow, loving companion. If you’re looking for a charming, quiet
+              friend who will add a touch of elegance to your home, Oliver is ready to meet you!
+            </p>
+            <a href="" class="btn btn--primary">Meet Oliver</a>
+          </article>
+        </li>
+      </ul>
+      <ul role="list" class="articles__list flow">
+        <li>
+          <article class="snippet">
+            <img src="/assets/portfolio/buzzbites.jpg" alt="This is a test My Second Article" class="snippet__image" />
+            <h3 class="snippet__title">
+              <a href="">Dusty</a>
+            </h3>
+            <p class="snippet__body">
+              Meet Dusty!
+              Dusty is a stunning 5-year-old Russian Blue with a silvery-blue coat that’s as soft as velvet. Known for
+              their quiet, intelligent nature, Dusty is a bit on the shy side at first but quickly warms up to those who
+              earn his trust. Once he’s comfortable, he’ll shower you with affection, purring contently as he snuggles
+              beside you. Dusty enjoys a peaceful environment and would thrive in a calm, loving home where he can relax
+              and enjoy his people’s company. If you’re looking for a beautiful, loyal companion who loves a good cuddle
+              but also enjoys his personal space, Dusty might be your perfect match.
+            </p>
+            <a href="" class="btn btn--primary">Meet Dusty</a>
+          </article>
+        </li>
+      </ul>
+      <ul role="list" class="articles__list flow">
+        <li>
+          <article class="snippet">
+            <img src="/assets/portfolio/buzzbites.jpg" alt="This is a test My Second Article" class="snippet__image" />
+            <h3 class="snippet__title">
+              <a href="">Bella</a>
+            </h3>
 
+            <p class="snippet__body">
+              Meet Bella, a sweet 2-year-old Domestic Shorthair with a beautiful mix of brown and black tabby stripes.
+              She’s playful and curious, always ready for a game of chase or to explore new places. Once she’s tired
+              from her adventures, she’ll happily curl up beside you for some quiet cuddle time. Bella gets along well
+              with other cats and would thrive in a home where she can get plenty of attention and playtime. If you’re
+              looking for a fun and affectionate companion, Bella is ready to join your family!
+            </p>
+            <a href="" class="btn btn--primary">Meet Bella</a>
+          </article>
+        </li>
+      </ul>
+      <ul role="list" class="articles__list flow">
+        <li>
+          <article class="snippet">
+            <img src="/assets/portfolio/buzzbites.jpg" alt="This is a test My Second Article" class="snippet__image" />
+            <h3 class="snippet__title">
+              <a href="">Milo</a>
+            </h3>
+            <p class="snippet__body">
+              Meet Milo, a majestic 4-year-old Maine Coon with a thick, luxurious coat and tufted ears that make him
+              look like royalty. Despite his grand appearance, Milo is incredibly gentle and loving, with a "dog-like"
+              personality. He loves being the center of attention and will happily follow you around the house, always
+              wanting to be close to his people. Milo enjoys being brushed and would thrive in a home where he can get
+              lots of love and care. If you’re looking for a big-hearted, affectionate cat, Milo is the perfect
+              companion!
+            </p>
+            <a href="" class="btn btn--primary">Meet Milo</a>
+          </article>
+        </li>
+      </ul>
+      <ul role="list" class="articles__list flow">
+        <li>
+          <article class="snippet">
+            <img src="/assets/portfolio/buzzbites.jpg" alt="This is a test My Second Article" class="snippet__image" />
+            <h3 class="snippet__title">
+              <a href="">Luna</a>
+            </h3>
+            <p class="snippet__body">
+              Meet Luna, a striking 3-year-old Siamese with creamy fur and vivid blue eyes that will captivate you from
+              the moment you meet her. Known for their vocal personalities, Luna loves to talk, especially when she
+              wants attention or to express her curiosity. She’s social, playful, and always eager to spend time with
+              her human friends. Luna would do best in a home where she’s the star of the show, and she can easily adapt
+              to life with other pets. If you’re looking for a talkative, affectionate cat with plenty of personality,
+              Luna could be your perfect match!
+            </p>
+            <a href="" class="btn btn--primary">Meet Luna</a>
+          </article>
+        </li>
+      </ul>
+      <ul role="list" class="articles__list flow">
+        <li>
+          <article class="snippet">
+            <img src="/assets/portfolio/buzzbites.jpg" alt="This is a test My Second Article" class="snippet__image" />
+            <h3 class="snippet__title">
+              <a href="">Max</a>
+            </h3>
+            <p class="snippet__body">
+              Meet Max, a handsome 6-year-old British Shorthair with a plush, blue-gray coat and striking golden eyes.
+              Max is the definition of relaxed and loving, enjoying quiet afternoons lounging in sunny spots and gentle
+              petting sessions. He’s a little reserved at first but quickly warms up to those who give him the space he
+              needs. Max enjoys being in the same room as you, often sitting by your side, quietly observing the world
+              around him. If you’re looking for a calm, affectionate companion who values comfort and companionship, Max
+              might just be the perfect fit for your home.
+            </p>
+            <a href="" class="btn btn--primary">Meet Max</a>
+          </article>
+        </li>
+      </ul>
+    </div>
   </main>
   <footer class="site-footer">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 26.6" class="logo" width="8rem"
-    fill="var(--logo-color, #000)">
-    <path
-      d="M32.4 8.1h2.9v11.7h-2.9V8.1zm4 7.3c0-2.9 1.8-4.6 4.5-4.6s4.5 1.7 4.5 4.6-1.7 4.7-4.5 4.7-4.5-1.7-4.5-4.7zm6.2 0c0-1.6-.6-2.5-1.6-2.5s-1.6.9-1.6 2.5.6 2.5 1.6 2.5 1.6-.8 1.6-2.5zm4 5h2.8c.3.6.9 1 1.6.9 1.1 0 1.7-.6 1.7-1.5v-1.6c-.5 1-1.6 1.7-2.7 1.6-2.1 0-3.5-1.6-3.5-4.4s1.3-4.5 3.6-4.5c1.2-.1 2.3.6 2.7 1.7h-.1V11h2.9v8.8c0 2.1-1.9 3.4-4.6 3.4-2.6 0-4.2-1.1-4.4-2.8zm6-5c0-1.4-.6-2.3-1.7-2.3s-1.7.9-1.7 2.3.6 2.2 1.7 2.2 1.7-.7 1.7-2.2zm4 0c0-2.9 1.8-4.6 4.5-4.6s4.5 1.7 4.5 4.6-1.7 4.7-4.5 4.7-4.4-1.7-4.5-4.7zm6.2 0c0-1.6-.6-2.5-1.6-2.5s-1.6.9-1.6 2.5.6 2.5 1.6 2.5 1.6-.8 1.6-2.5zm4-6.5c0-.8.6-1.5 1.4-1.5.8 0 1.5.6 1.5 1.4 0 .8-.6 1.5-1.4 1.5h-.1c-.7 0-1.4-.6-1.4-1.4zm0 2.1h2.9v8.9h-2.9V11zm13.5 4.4c0 2.9-1.3 4.6-3.5 4.6-1.2.1-2.2-.6-2.7-1.6H74v4.4h-2.9V11H74v1.6c.4-1.1 1.5-1.8 2.7-1.7 2.3 0 3.6 1.6 3.6 4.5zm-3 0c0-1.4-.7-2.3-1.7-2.3s-1.7.9-1.7 2.3.6 2.3 1.7 2.3 1.8-.8 1.7-2.3zm7.9-4.6c2.4 0 3.9 1.1 3.9 3h-2.6c0-.6-.5-1-1.3-1s-1.2.2-1.2.7c0 .5.3.6 1 .7l1.9.4c1.8.4 2.5 1.1 2.5 2.4 0 1.8-1.7 3-4.1 3s-4.1-1.2-4.2-3h2.8c.1.7.6 1 1.4 1s1.2-.3 1.2-.7c0-.5-.3-.6-1-.7l-1.7-.4c-1.7-.4-2.6-1.3-2.6-2.6.1-1.7 1.6-2.8 4-2.8zM99 19.9h-2.8v-1.7h-.1c-.3 1.1-1.4 1.9-2.6 1.8-1.7.1-3.1-1.3-3.2-3v-6h2.9v5.1c0 1 .5 1.6 1.4 1.6.8 0 1.5-.7 1.5-1.5V11H99v8.9zm1.4-8.9h2.8v1.7h.1c.3-1.1 1.4-1.9 2.5-1.9 1.2-.1 2.3.7 2.5 1.9h.1c.4-1.2 1.5-1.9 2.7-1.9 1.5-.1 2.9 1.1 2.9 2.7v6.3h-2.9v-5.3c0-.9-.4-1.4-1.2-1.4-.7 0-1.3.5-1.3 1.2v5.5h-2.8v-5.3c0-.9-.4-1.4-1.2-1.4-.7 0-1.3.6-1.3 1.3v5.4h-2.9V11zM26.7 8.9c0-4.9-4-8.9-8.9-8.9-2.5 0-4.9 1-6.6 2.9H0v23.7h23.7V15.5c1.9-1.7 3-4.1 3-6.6zm-4.6 0c0 2.4-1.9 4.3-4.3 4.3s-4.3-1.9-4.3-4.3 1.9-4.3 4.3-4.3 4.3 1.9 4.3 4.3zM19.2 22H4.6V7.4H9c-.1.5-.1 1-.1 1.4 0 4.9 4 8.9 8.9 8.9.5 0 .9 0 1.4-.1V22z" />
-  </svg>
-  <p>© 2024 Company Name. All rights reserved.</p>
-</footer>
-
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 26.6" class="logo" width="8rem"
+      fill="var(--logo-color, #000)">
+      <path
+        d="M32.4 8.1h2.9v11.7h-2.9V8.1zm4 7.3c0-2.9 1.8-4.6 4.5-4.6s4.5 1.7 4.5 4.6-1.7 4.7-4.5 4.7-4.5-1.7-4.5-4.7zm6.2 0c0-1.6-.6-2.5-1.6-2.5s-1.6.9-1.6 2.5.6 2.5 1.6 2.5 1.6-.8 1.6-2.5zm4 5h2.8c.3.6.9 1 1.6.9 1.1 0 1.7-.6 1.7-1.5v-1.6c-.5 1-1.6 1.7-2.7 1.6-2.1 0-3.5-1.6-3.5-4.4s1.3-4.5 3.6-4.5c1.2-.1 2.3.6 2.7 1.7h-.1V11h2.9v8.8c0 2.1-1.9 3.4-4.6 3.4-2.6 0-4.2-1.1-4.4-2.8zm6-5c0-1.4-.6-2.3-1.7-2.3s-1.7.9-1.7 2.3.6 2.2 1.7 2.2 1.7-.7 1.7-2.2zm4 0c0-2.9 1.8-4.6 4.5-4.6s4.5 1.7 4.5 4.6-1.7 4.7-4.5 4.7-4.4-1.7-4.5-4.7zm6.2 0c0-1.6-.6-2.5-1.6-2.5s-1.6.9-1.6 2.5.6 2.5 1.6 2.5 1.6-.8 1.6-2.5zm4-6.5c0-.8.6-1.5 1.4-1.5.8 0 1.5.6 1.5 1.4 0 .8-.6 1.5-1.4 1.5h-.1c-.7 0-1.4-.6-1.4-1.4zm0 2.1h2.9v8.9h-2.9V11zm13.5 4.4c0 2.9-1.3 4.6-3.5 4.6-1.2.1-2.2-.6-2.7-1.6H74v4.4h-2.9V11H74v1.6c.4-1.1 1.5-1.8 2.7-1.7 2.3 0 3.6 1.6 3.6 4.5zm-3 0c0-1.4-.7-2.3-1.7-2.3s-1.7.9-1.7 2.3.6 2.3 1.7 2.3 1.8-.8 1.7-2.3zm7.9-4.6c2.4 0 3.9 1.1 3.9 3h-2.6c0-.6-.5-1-1.3-1s-1.2.2-1.2.7c0 .5.3.6 1 .7l1.9.4c1.8.4 2.5 1.1 2.5 2.4 0 1.8-1.7 3-4.1 3s-4.1-1.2-4.2-3h2.8c.1.7.6 1 1.4 1s1.2-.3 1.2-.7c0-.5-.3-.6-1-.7l-1.7-.4c-1.7-.4-2.6-1.3-2.6-2.6.1-1.7 1.6-2.8 4-2.8zM99 19.9h-2.8v-1.7h-.1c-.3 1.1-1.4 1.9-2.6 1.8-1.7.1-3.1-1.3-3.2-3v-6h2.9v5.1c0 1 .5 1.6 1.4 1.6.8 0 1.5-.7 1.5-1.5V11H99v8.9zm1.4-8.9h2.8v1.7h.1c.3-1.1 1.4-1.9 2.5-1.9 1.2-.1 2.3.7 2.5 1.9h.1c.4-1.2 1.5-1.9 2.7-1.9 1.5-.1 2.9 1.1 2.9 2.7v6.3h-2.9v-5.3c0-.9-.4-1.4-1.2-1.4-.7 0-1.3.5-1.3 1.2v5.5h-2.8v-5.3c0-.9-.4-1.4-1.2-1.4-.7 0-1.3.6-1.3 1.3v5.4h-2.9V11zM26.7 8.9c0-4.9-4-8.9-8.9-8.9-2.5 0-4.9 1-6.6 2.9H0v23.7h23.7V15.5c1.9-1.7 3-4.1 3-6.6zm-4.6 0c0 2.4-1.9 4.3-4.3 4.3s-4.3-1.9-4.3-4.3 1.9-4.3 4.3-4.3 4.3 1.9 4.3 4.3zM19.2 22H4.6V7.4H9c-.1.5-.1 1-.1 1.4 0 4.9 4 8.9 8.9 8.9.5 0 .9 0 1.4-.1V22z" />
+    </svg>
+    <p>© 2024 Purrs & Paws Adoption</p>
+  </footer>
 </body>
 
 </html>
